@@ -10,6 +10,8 @@
 
 @interface Home : UIViewController
 
+@property (strong, nonatomic) IBOutlet UILabel *lblWelcome;
+@property (strong, nonatomic) IBOutlet UIButton *btnChangeText;
 
 @end
 

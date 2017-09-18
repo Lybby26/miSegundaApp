@@ -25,5 +25,29 @@
     // Dispose of any resources that can be recreated.
 }
 
+static int contadorClics = 0;
+
+- (IBAction)changeButtonPressed:(id)sender {
+    //Arreglo mensajes
+    NSArray *arrMsg = @[@"Primer mensaje",@"Segundo mensaje",@"Tercer mensaje",@"Cuarto mensaje",@"Quinto mensaje"];
+    //Arreglo colores
+    NSArray *arrColors = @[@"red",@"yellow",@"blue",@"grey",@"black"];
+    
+    contadorClics++;
+
+    if(contadorClics <= 4)
+      self.lblWelcome.text= arrMsg[contadorClics];
+    //self.lblWelcome.textColor = ;
+    else
+        self.lblWelcome.text= arrMsg[0];
+   
+    
+    //self.lblWelcome.text= @"Mentira!";
+}
+
+- (IBAction)switchValueChanged:(id)sender {
+    self.lblWelcome.hidden = YES;
+}
+
 
 @end
