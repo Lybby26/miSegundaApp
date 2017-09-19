@@ -37,7 +37,7 @@ static int contadorClics = 0;
         contadorClics++;
 
     if(contadorClics <= 4){
-      self.lblWelcome.text= arrMsg[contadorClics];
+    self.lblWelcome.text= arrMsg[contadorClics];
      self.lblWelcome.textColor = arrColors[contadorClics];
     }
     else{
